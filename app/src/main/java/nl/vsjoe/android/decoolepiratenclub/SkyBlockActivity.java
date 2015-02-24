@@ -46,4 +46,17 @@ public class SkyBlockActivity extends ActionBarActivity {
     public void skyBlockIntro(View view) {
         sp.playIntro();
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        sp.stopPlayer();
+    }
+
+    @Override
+    protected void onDestroy() {
+        sp.stopPlayer();
+        super.onDestroy();
+
+    }
 }
