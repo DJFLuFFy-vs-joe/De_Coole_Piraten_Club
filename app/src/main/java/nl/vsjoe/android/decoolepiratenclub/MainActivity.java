@@ -49,6 +49,10 @@ public class MainActivity extends ActionBarActivity {
 
                 String choice = list.get(position);
 
+                if (choice == "Sky Block Theme Song") {
+                    intent = new Intent(context, SkyBlockActivity.class);
+                }
+
                 if (choice == "Stuurman Koala") {
                     intent = new Intent(context, StuurmanKoala.class);
                 }
@@ -74,7 +78,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void mainMenu() {
-       // list.add("Sky Block Theme Song");
+        list.add("Sky Block Theme Song");
         list.add("Stuurman Koala");
        // list.add("Dekzwabber FLuFFy");
        // list.add("Bootsman Kraai");
