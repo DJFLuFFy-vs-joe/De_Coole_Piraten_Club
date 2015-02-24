@@ -19,10 +19,18 @@ public class SkyBlockThemeSongPlayer {
 
     public void playIntro() {
 
-        if (mp.isPlaying()) {
-            mp.stop();
+        if (!mp.isPlaying()) {
+            mp.start();
+        } else {
+            mp.pause();
+            mp.seekTo(0);
         }
+    }
 
-        mp.start();
+    public void stopPlayer() {
+        if(mp.isPlaying()) {
+            mp.pause();
+            mp.seekTo(0);
+        }
     }
 }
