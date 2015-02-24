@@ -2,7 +2,6 @@ package nl.vsjoe.android.decoolepiratenclub.musicplayer;
 
 import android.content.Context;
 import android.media.MediaPlayer;
-import android.view.View;
 
 import nl.vsjoe.android.decoolepiratenclub.R;
 
