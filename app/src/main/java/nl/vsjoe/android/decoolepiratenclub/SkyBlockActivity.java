@@ -4,13 +4,19 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import nl.vsjoe.android.decoolepiratenclub.musicplayer.SkyBlockThemeSongPlayer;
 
 
 public class SkyBlockActivity extends ActionBarActivity {
 
+    SkyBlockThemeSongPlayer sp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sp = new SkyBlockThemeSongPlayer(this.getApplicationContext());
         setContentView(R.layout.activity_sky_block);
     }
 
@@ -35,5 +41,9 @@ public class SkyBlockActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void skyBlockIntro(View view) {
+        sp.playIntro();
     }
 }
