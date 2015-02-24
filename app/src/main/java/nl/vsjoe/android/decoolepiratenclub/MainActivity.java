@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,13 +17,14 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     private List<String> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         final ListView listView = (ListView) findViewById(R.id.listview);
