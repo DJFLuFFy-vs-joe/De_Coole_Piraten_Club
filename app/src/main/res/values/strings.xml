@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">De Coole Piraten Club</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sky_block">The Sky Block Theme</string>
+    <string name="title_activity_bootsman_kraai">Bootsman Kraai</string>
+    <string name="title_activity_stuurman_koala">Stuurman Koala</string>
+    <string name="title_activity_dek_zwabber_fluffy">Dek Zwabber FLuFFy</string>
+
+</resources>
