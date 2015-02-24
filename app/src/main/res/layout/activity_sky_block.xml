@@ -14,5 +14,6 @@
         android:text="Sky Block Intro Theme Song"
         android:id="@+id/skyBlockIntro"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="skyBlockIntro"/>
 </RelativeLayout>
