@@ -40,11 +40,33 @@ public class StuurmanKoala extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void playSound(View view, int soundId) {
+        new PlaySound(view.getContext(), soundId);
+    }
+
     //Button methods
 
     public void heyFluffy(View view) {
+        playSound(view, R.raw.koala_heyfluffy);
+    }
 
-        new PlaySound(view.getContext(), R.raw.koala_heyfluffy);
+    public void kutGozer(View view){
+        playSound(view, R.raw.koala_diekutgozer);
+    }
 
+    public void inDeFik(View view) {
+        playSound(view, R.raw.koala_indefik);
+    }
+
+    public void jeStinkt(View view) {
+        playSound(view, R.raw.koala_jestinktuitjebakkes);
+    }
+
+    public void haha(View view) {
+        playSound(view, R.raw.koala_lach);
+    }
+
+    public void oops(View view) {
+        playSound(view,R.raw.koala_oohooops);
     }
 }

@@ -72,10 +72,10 @@ public class MainActivity extends Activity {
     }
 
     private void mainMenu() {
-        list.add("Sky Block Theme Song");
+       // list.add("Sky Block Theme Song");
         list.add("Stuurman Koala");
-        list.add("Dekzwabber FLuFFy");
-        list.add("Bootsman Kraai");
+       // list.add("Dekzwabber FLuFFy");
+       // list.add("Bootsman Kraai");
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
