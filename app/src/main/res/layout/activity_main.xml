@@ -7,7 +7,7 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     tools:context=".MainActivity"
-    android:background="#1c1c1c">
+    android:background="@mipmap/ic_background">
 
 
     <ListView
